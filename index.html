@@ -12,22 +12,22 @@
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
+    <!-- ================= NAVBAR ================= -->
 
     <header>
-        <nav>
+        <nav class="navbar">
 
             <div class="logo">
                 Nandini Barik
             </div>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
 
         </nav>
@@ -40,21 +40,21 @@
 
         <div class="home-content">
 
-            <img
-                src="assets/profile.jpeg"
-                alt="Nandini Barik"
-                class="profile-photo"
-            >
+            <img src="assets/profile.jpeg"
+                 alt="Nandini Barik"
+                 class="profile-photo">
 
-            <p>Hello, I'm</p>
+            <h1>
+                Hi, I'm <span>Nandini Barik</span>
+            </h1>
 
-            <h1>Nandini Barik</h1>
-
-            <h2>ECE Student</h2>
+            <h2>
+                <span id="typing"></span>
+            </h2>
 
             <p>
                 Passionate about technology, web development,
-                AI, IoT and innovative software solutions.
+                Artificial Intelligence and IoT.
             </p>
 
             <a href="#projects" class="btn">
@@ -68,48 +68,80 @@
 
     <!-- ================= ABOUT ================= -->
 
-    <section id="about">
+    <section id="about" class="section">
 
-        <h2>About Me</h2>
+        <div class="container">
 
-        <p>
-            I am an Electronics and Communication Engineering student
-            at Guru Nanak Institute of Technology with a strong interest
-            in technology, programming and web development.
-            I enjoy building innovative projects using AI, IoT,
-            Python and modern web technologies.
-        </p>
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <p class="section-text">
+                I am an Electronics and Communication Engineering
+                student at Guru Nanak Institute of Technology,
+                interested in web development, Artificial Intelligence,
+                computer engineering and IoT.
+            </p>
+
+            <p class="section-text">
+                I enjoy building practical technology projects and
+                continuously improving my programming and development
+                skills.
+            </p>
+
+        </div>
 
     </section>
 
 
     <!-- ================= SKILLS ================= -->
 
-    <section id="skills">
+    <section id="skills" class="section">
 
-        <h2>Skills</h2>
+        <div class="container">
 
-        <div class="skills-container">
+            <h2 class="section-title">
+                Skills
+            </h2>
 
-            <div class="skill">HTML</div>
+            <div class="skills-container">
 
-            <div class="skill">CSS</div>
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>C</p>
+                    <p>Python</p>
+                    <p>Java</p>
+                </div>
 
-            <div class="skill">JavaScript</div>
+                <div class="skill-card">
+                    <h3>Web Development</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
 
-            <div class="skill">Python</div>
+                <div class="skill-card">
+                    <h3>AI & Computer Vision</h3>
+                    <p>Artificial Intelligence</p>
+                    <p>Machine Learning</p>
+                    <p>OpenCV</p>
+                </div>
 
-            <div class="skill">C</div>
+                <div class="skill-card">
+                    <h3>IoT</h3>
+                    <p>ESP32</p>
+                    <p>Sensors</p>
+                    <p>IoT Systems</p>
+                </div>
 
-            <div class="skill">Java</div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>Git</p>
+                    <p>GitHub</p>
+                    <p>VS Code</p>
+                </div>
 
-            <div class="skill">Git & GitHub</div>
-
-            <div class="skill">OpenCV</div>
-
-            <div class="skill">AI & Machine Learning</div>
-
-            <div class="skill">IoT</div>
+            </div>
 
         </div>
 
@@ -118,155 +150,137 @@
 
     <!-- ================= PROJECTS ================= -->
 
-    <section id="projects">
+    <section id="projects" class="section">
 
-        <h2>Featured Projects</h2>
+        <div class="container">
 
-        <div class="projects-container">
+            <h2 class="section-title">
+                Projects
+            </h2>
+
+            <div class="projects-container">
 
 
-            <!-- PROJECT 1 -->
+                <!-- PROJECT 1 -->
 
-            <div class="project-card">
-
-                <div>
+                <div class="project-card">
 
                     <h3>
-                        AI Financial Advisor
+                        AI Financial Advisor — RAG
                     </h3>
 
                     <p>
-                        An AI-powered financial advisory system
-                        using RAG technology to provide information
-                        from financial documents and trusted sources.
+                        An AI-based financial advisor project using
+                        Retrieval-Augmented Generation to provide
+                        information from financial documents and
+                        resources.
                     </p>
 
-                    <div class="tech">
-                        Python | RAG | AI | NLP
-                    </div>
+                    <a href="https://github.com/dishadas5159/AI-Financial-Advisor"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-btn">
+                        View Project
+                    </a>
 
                 </div>
 
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
 
-            </div>
+                <!-- PROJECT 2 -->
 
-
-            <!-- PROJECT 2 -->
-
-            <div class="project-card">
-
-                <div>
-
-                    <h3>
-                        NariSuraksha Band
-                    </h3>
-
-                    <p>
-                        An IoT and AI-based women safety concept
-                        designed to detect unusual situations and
-                        send emergency alerts using connected devices.
-                    </p>
-
-                    <div class="tech">
-                        IoT | ESP32 | GPS | GSM | AI
-                    </div>
-
-                </div>
-
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
-
-            </div>
-
-
-            <!-- PROJECT 3 -->
-
-            <div class="project-card">
-
-                <div>
-
-                    <h3>
-                        Smart Driver Drowsiness Detection
-                    </h3>
-
-                    <p>
-                        A computer vision project that detects
-                        driver drowsiness using facial and eye
-                        detection techniques.
-                    </p>
-
-                    <div class="tech">
-                        Python | OpenCV | Computer Vision
-                    </div>
-
-                </div>
-
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
-
-            </div>
-
-
-            <!-- PROJECT 4 -->
-
-            <div class="project-card">
-
-                <div>
-
-                    <h3>
-                        AI Healthcare Resource Optimization
-                    </h3>
-
-                    <p>
-                        A software-based healthcare solution designed
-                        to help optimize hospital resources and improve
-                        healthcare management using AI.
-                    </p>
-
-                    <div class="tech">
-                        AI | Python | Data Analysis
-                    </div>
-
-                </div>
-
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
-
-            </div>
-
-
-            <!-- PROJECT 5 -->
-
-            <div class="project-card">
-
-                <div>
+                <div class="project-card">
 
                     <h3>
                         Responsive Image Gallery
                     </h3>
 
                     <p>
-                        A responsive image gallery developed during
-                        the CodeAlpha Frontend Development Internship
-                        with navigation, hover effects and responsive
-                        design.
+                        A responsive image gallery created using
+                        HTML, CSS and JavaScript with interactive
+                        navigation and image viewing features.
                     </p>
 
-                    <div class="tech">
-                        HTML | CSS | JavaScript
-                    </div>
+                    <a href="https://github.com/Nandini090605/CodeAlpha_ImageGallery"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-btn">
+                        View Project
+                    </a>
 
                 </div>
 
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
+
+                <!-- PROJECT 3 -->
+
+                <div class="project-card">
+
+                    <h3>
+                        Calculator
+                    </h3>
+
+                    <p>
+                        A functional calculator developed using
+                        HTML, CSS and JavaScript with arithmetic
+                        operations and an interactive interface.
+                    </p>
+
+                    <a href="https://github.com/Nandini090605/Calculator"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-btn">
+                        View Project
+                    </a>
+
+                </div>
+
+
+                <!-- PROJECT 4 -->
+
+                <div class="project-card">
+
+                    <h3>
+                        Contact Book
+                    </h3>
+
+                    <p>
+                        A contact management project that allows
+                        users to manage and organize contact
+                        information.
+                    </p>
+
+                    <a href="https://github.com/Nandini090605/codsoft_tasks/tree/main/TASK%205%20-%20CONTACT%20BOOK"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-btn">
+                        View Project
+                    </a>
+
+                </div>
+
+
+                <!-- PROJECT 5 -->
+
+                <div class="project-card">
+
+                    <h3>
+                        Password Generator
+                    </h3>
+
+                    <p>
+                        A password generator project designed to
+                        create passwords using programming logic
+                        and user-selected options.
+                    </p>
+
+                    <a href="https://github.com/Nandini090605/codsoft_tasks/tree/main/TASK%203%20-%20PASSWORD%20GENERATOR"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-btn">
+                        View Project
+                    </a>
+
+                </div>
+
 
             </div>
 
@@ -277,23 +291,29 @@
 
     <!-- ================= EDUCATION ================= -->
 
-    <section id="education">
+    <section id="education" class="section">
 
-        <h2>Education</h2>
+        <div class="container">
 
-        <div class="education-card">
+            <h2 class="section-title">
+                Education
+            </h2>
 
-            <h3>
-                Guru Nanak Institute of Technology
-            </h3>
+            <div class="education-card">
 
-            <p>
-                Electronics and Communication Engineering
-            </p>
+                <h3>
+                    Guru Nanak Institute of Technology
+                </h3>
 
-            <p>
-                ECE Department
-            </p>
+                <p>
+                    Electronics and Communication Engineering
+                </p>
+
+                <p>
+                    ECE Department
+                </p>
+
+            </div>
 
         </div>
 
@@ -302,38 +322,44 @@
 
     <!-- ================= CONTACT ================= -->
 
-    <section id="contact">
+    <section id="contact" class="section">
 
-        <h2>Contact Me</h2>
+        <div class="container">
 
-        <p>
-            Email:
-            <a href="mailto:nandinibarik056@gmail.com">
-                nandinibarik056@gmail.com
-            </a>
-        </p>
+            <h2 class="section-title">
+                Contact Me
+            </h2>
 
-        <p>
-            GitHub:
-            <a
-                href="https://github.com/Nandini090605"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                github.com/Nandini090605
-            </a>
-        </p>
+            <div class="contact-container">
 
-        <p>
-            LinkedIn:
-            <a
-                href="https://www.linkedin.com/in/nandini-barik-a0976333a/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                LinkedIn Profile
-            </a>
-        </p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:nandinibarik056@gmail.com">
+                        nandinibarik056@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/Nandini090605"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        github.com/Nandini090605
+                    </a>
+                </p>
+
+                <p>
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/nandini-barik-a0976333a/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        LinkedIn Profile
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
 
@@ -343,7 +369,7 @@
     <footer>
 
         <p>
-            © 2026 Nandini Barik. All Rights Reserved.
+            © <span id="year"></span> Nandini Barik. All Rights Reserved.
         </p>
 
     </footer>
